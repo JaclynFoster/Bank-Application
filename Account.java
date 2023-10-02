@@ -18,7 +18,7 @@ public abstract class Account implements BaseRate{
         //Set Account Number
         index++;
         this.accountNumber = setAccountNumber();
-        System.out.println("ACCOUNT NUMBER" + this.accountNumber);
+       // System.out.println("ACCOUNT NUMBER" + this.accountNumber);
 
         }
 
@@ -29,4 +29,11 @@ public abstract class Account implements BaseRate{
             return lastTwoOfSSN + uniqueID + randomNumber;
         } 
     //List common methods
+    public void showInfo() {
+        System.out.println(
+            "NAME: " + name +
+            "\nACCOUNT NUMBER: " + accountNumber + 
+            "\nBALANCE: " + balance
+        );
+    }
 }
