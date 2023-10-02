@@ -13,6 +13,11 @@ public class Checking extends Account {
             // System.out.println("NEW CHECKING ACCOUNT");
         }
     //List any methods specific to the Checking Account
+    @Override
+    public void setRate() {
+        rate = getBaseRate() * .15;
+    }
+
     private void setDebitCard() {
         debitCardNumber = (int) (Math.random() * Math.pow(10,12));
         debitCardPIN = (int) (Math.random() * Math.pow(10, 4));
