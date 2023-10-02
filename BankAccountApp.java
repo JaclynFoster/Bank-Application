@@ -4,6 +4,7 @@ public class BankAccountApp {
         Checking checkingAccount1 = new Checking("Tom Wilson", "3427184649", 1500);
 
         Savings savingAccount1 = new Savings("Rich Lowe", "4725492802", 2540);
+        savingAccount1.compound();
 
         savingAccount1.showInfo();
 
